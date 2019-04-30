@@ -10,7 +10,6 @@ int main(int argc, char *argv[]){
 				zwischen = 1;
 				break;
 			}
-			
 		}
 		if(zwischen == 0){
 			printf("%i\n",i);
