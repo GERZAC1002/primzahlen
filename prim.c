@@ -1,11 +1,10 @@
 #include <stdio.h>
 
 int main(int argc, char *argv[]){
-	register int max = atoi(argv[1]);
-	register int zwischen = 0;
-	printf("1\n2\n");
-	for(register int i = 3; i <= max;i++){
-		for(register int j = 2; j <= i/2; j++){
+	long long max = atoi(argv[1]);
+	char zwischen = 0;
+	for(long long i = 2; i <= max; i++){
+		for(long long j = 2; j <= i/2; j++){
 			if((i%j) == 0){
 				zwischen = 1;
 				break;
@@ -13,8 +12,6 @@ int main(int argc, char *argv[]){
 		}
 		if(zwischen == 0){
 			printf("%i\n",i);
-		}else{
-			zwischen = 0;
 		}
 		zwischen = 0;
 	}
